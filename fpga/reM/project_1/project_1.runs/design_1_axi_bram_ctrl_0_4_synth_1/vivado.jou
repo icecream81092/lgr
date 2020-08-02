@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 13 13:31:25 2019
+# Process ID: 30197
+# Current directory: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_4_synth_1
+# Command line: vivado -log design_1_axi_bram_ctrl_0_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_4.tcl
+# Log file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_4_synth_1/design_1_axi_bram_ctrl_0_4.vds
+# Journal file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_4_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_axi_bram_ctrl_0_4.tcl -notrace

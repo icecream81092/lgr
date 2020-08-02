@@ -1,0 +1,667 @@
+// module cnn_ctrl(
+// clk,
+// rst,
+// en,
+// pset_done,
+// conv_done,
+// eras_done,
+// maxp_done,
+// // mode,
+// done,
+// pset_en,
+// conv_en,
+// eras_en,
+// maxp_en
+// );
+
+// `include "../src/param.v"
+
+// parameter
+// ST_PSET = 4,
+// ST_CONV = 0,
+// ST_ERAS = 1,
+// ST_MAXP = 2,
+// ST_DONE = 3;
+
+// input clk;
+// input rst;
+// input en;
+// input pset_done;
+// input conv_done;
+// input eras_done;
+// input maxp_done;
+// // input [DATA_SIZE-1:0] mode;
+
+// output done;
+// output pset_en;  
+// output conv_en;  
+// output eras_en;  
+// output maxp_en;  
+
+// reg done;
+// reg pset_en;  
+// reg conv_en;  
+// reg eras_en;  
+// reg maxp_en;  
+
+// reg [2:0] ns;
+// reg [2:0] cs;
+
+
+
+// // `ifdef sim_disp
+
+// // integer cycle;
+// // integer t_cyc;
+
+// // initial begin
+// //   cycle = 0;
+// //   t_cyc = 0;
+// // end
+
+// // always@(posedge clk) begin
+// //   cycle = cycle + 1;
+// //   t_cyc = t_cyc + 1;
+// //   case(cs)
+// //   ST_PSET: begin
+// //     if(!pset_en && pset_done) begin
+// //       $display("cnn  pset state cycle: %d", cycle); 
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_CONV: begin
+// //     if(!conv_en && conv_done) begin
+// //       $display("cnn  conv state cycle: %d", cycle);
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_ERAS: begin
+// //     if(!eras_en && eras_done) begin
+// //       $display("cnn  eras state cycle: %d", cycle); 
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_MAXP: begin
+// //     if(!maxp_en && maxp_done) begin
+// //       $display("cnn  maxp state cycle: %d", cycle);   
+// //       $display("");
+// //       $display("cnn  done total cycle: %d", t_cyc); 
+// //     end
+// //   end
+// //   ST_DONE: begin
+// //     if(en) begin
+// //       cycle = 0;
+// //       t_cyc = 0;
+// //       $display("cnn  start !!!");
+// //     end
+// //   end
+// //   endcase
+// // end
+
+// // `endif
+
+
+// // integer cycle_count = 0;
+// // always@(posedge clk) cycle_count = cycle_count + 1;
+
+// wire [1:0] mode;
+// assign mode = 2'b11;
+
+// always@(*) begin
+//   ns = cs;
+//   case(cs)
+//   ST_PSET: begin
+//     // $display("ST_PSET");
+//     if(!pset_en && pset_done) begin
+//       if(mode[1]) ns = ST_CONV;
+//       else        ns = ST_ERAS;
+//     end
+//   end
+//   ST_CONV: begin
+//     // $display("ST_CONV");
+//     if(!conv_en && conv_done)
+//       if(mode[0]) ns = ST_ERAS;
+//       else        ns = ST_DONE;
+//   end
+//   ST_ERAS: begin
+//     // $display("ST_ERAS");
+//     if(!eras_en && eras_done)
+//       ns = ST_MAXP;
+//   end
+//   ST_MAXP: begin
+//     // $display("ST_MAXP");
+//     if(!maxp_en && maxp_done)
+//       ns = ST_DONE;
+//   end
+//   ST_DONE: begin
+//     // $display("ST_DONE");
+//     if(en)
+//       ns = ST_PSET;
+//   end
+//   default: ns = cs;
+//   endcase
+// end
+
+// always@(posedge clk or posedge rst) begin
+//   if(rst) begin
+//     done    <= 0;
+//     pset_en <= 0;
+//     conv_en <= 0;
+//     eras_en <= 0;
+//     maxp_en <= 0;
+//   end
+//   else begin
+//     case(cs)
+//     ST_PSET: begin
+//       pset_en <= 0;
+//       if(!pset_en && pset_done)
+//         // conv_en <= 1;
+//         if(mode[1]) conv_en <= 1;
+//         else        eras_en <= 1;
+//     end
+//     ST_CONV: begin
+//       conv_en <= 0;
+//       if(!conv_en && conv_done)
+//         // eras_en <= 1;
+//         if(mode[0]) eras_en <= 1;
+//         else        done    <= 1;
+//     end
+//     ST_ERAS: begin
+//       eras_en <= 0;
+//       if(!eras_en && eras_done)
+//         maxp_en <= 1;
+//     end
+//     ST_MAXP: begin
+//       maxp_en <= 0;
+//       if(!maxp_en && maxp_done)
+//         done <= 1;
+//     end
+//     ST_DONE: begin
+//       if(en) begin
+//         done    <= 0;
+// 	      pset_en <= 1;
+//       end
+//     end
+//     default: begin
+//       done    <= 0;
+//       pset_en <= 0;
+//       conv_en <= 0;
+//       eras_en <= 0;
+//       maxp_en <= 0;
+//     end
+//     endcase
+//   end
+// end
+
+// always@(posedge clk or posedge rst) begin
+//   if(rst) begin
+//     cs <= ST_DONE;
+//   end
+//   else begin
+//     cs <= ns;
+//   end
+// end
+
+// endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// module cnn_ctrl(
+// clk,
+// rst,
+// en,
+// pset_done,
+// conv_done,
+// eras_done,
+// maxp_done,
+// done,
+// pset_en,
+// conv_en,
+// eras_en,
+// maxp_en
+// );
+
+// `include "../src/param.v"
+
+// parameter
+// ST_PSET = 4,
+// ST_CONV = 0,
+// ST_ERAS = 1,
+// ST_MAXP = 2,
+// ST_DONE = 3;
+
+// input clk;
+// input rst;
+// input en;
+// input pset_done;
+// input conv_done;
+// input eras_done;
+// input maxp_done;
+
+// output done;
+// output pset_en;  
+// output conv_en;  
+// output eras_en;  
+// output maxp_en;  
+
+// reg done;
+// reg pset_en;  
+// reg conv_en;  
+// reg eras_en;  
+// reg maxp_en;  
+
+// reg [2:0] ns;
+// reg [2:0] cs;
+
+
+
+// // `ifdef sim_disp
+
+// // integer cycle;
+// // integer t_cyc;
+
+// // initial begin
+// //   cycle = 0;
+// //   t_cyc = 0;
+// // end
+
+// // always@(posedge clk) begin
+// //   cycle = cycle + 1;
+// //   t_cyc = t_cyc + 1;
+// //   case(cs)
+// //   ST_PSET: begin
+// //     if(!pset_en && pset_done) begin
+// //       $display("cnn  pset state cycle: %d", cycle); 
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_CONV: begin
+// //     if(!conv_en && conv_done) begin
+// //       $display("cnn  conv state cycle: %d", cycle);
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_ERAS: begin
+// //     if(!eras_en && eras_done) begin
+// //       $display("cnn  eras state cycle: %d", cycle); 
+// //       cycle = 0;
+// //     end
+// //   end
+// //   ST_MAXP: begin
+// //     if(!maxp_en && maxp_done) begin
+// //       $display("cnn  maxp state cycle: %d", cycle);       
+// //       $display("");  
+// //       $display("cnn  done total cycle: %d", t_cyc); 
+// //     end
+// //   end
+// //   ST_DONE: begin
+// //     if(en) begin
+// //       cycle = 0; 
+// //       t_cyc = 0; 
+// //       $display("cnn  start !!!");
+// //     end
+// //   end
+// //   endcase
+// // end
+
+// // `endif
+
+
+// integer cycle_count = 0;
+// always@(posedge clk) cycle_count = cycle_count + 1;
+
+// wire [1:0]  mode;
+// assign mode = 2'b11;
+// always@(*) begin
+//   ns = cs;
+//   case(cs)
+//   ST_PSET: begin
+//     // $display("ST_PSET");
+//     if(!pset_en && pset_done) begin
+//       $display("grouping mode: ",mode[1],mode[0]);
+//       if(mode[1]) ns = ST_CONV;
+//       else        ns = ST_ERAS;
+//     end
+//   end
+//   ST_CONV: begin
+//     // $display("ST_CONV");
+//     if(!conv_en && conv_done)
+//       if(mode[0]) ns = ST_ERAS;
+//       else        ns = ST_DONE;
+//   end
+//   ST_ERAS: begin
+//     // $display("ST_ERAS");
+//     if(!eras_en && eras_done)
+//       ns = ST_MAXP;
+//   end
+//   ST_MAXP: begin
+//     // $display("ST_MAXP");
+//     if(!maxp_en && maxp_done)             
+    
+//       ns = ST_DONE;
+//   end
+//   ST_DONE: begin
+//     // $display("ST_DONE");
+//     if(en)
+//       ns = ST_PSET;
+//   end
+//   default: ns = cs;
+//   endcase
+// end
+
+// always@(posedge clk or posedge rst) begin
+//   if(rst) begin
+//     done    <= 0;
+//     pset_en <= 0;
+//     conv_en <= 0;
+//     eras_en <= 0;
+//     maxp_en <= 0;
+//   end
+//   else begin
+//     case(cs)
+//     ST_PSET: begin
+//       pset_en <= 0;
+//       if(!pset_en && pset_done)
+//         // conv_en <= 1;
+//         if(mode[1]) conv_en <= 1;
+//         else        eras_en <= 1;
+//     end
+//     ST_CONV: begin
+//       conv_en <= 0;
+//       if(!conv_en && conv_done)
+//         // eras_en <= 1;
+//         if(mode[0]) eras_en <= 1;
+//         else        done    <= 1;
+//     end
+//     ST_ERAS: begin
+//       eras_en <= 0;
+//       if(!eras_en && eras_done)
+//         maxp_en <= 1;
+//     end
+//     ST_MAXP: begin
+//       maxp_en <= 0;
+//       if(!maxp_en && maxp_done)
+//         done <= 1;
+//     end
+//     ST_DONE: begin
+//       if(en) begin
+//         done    <= 0;
+// 	      pset_en <= 1;
+//       end
+//     end
+//     default: begin
+//       done    <= 0;
+//       pset_en <= 0;
+//       conv_en <= 0;
+//       eras_en <= 0;
+//       maxp_en <= 0;
+//     end
+//     endcase
+//   end
+// end
+
+// always@(posedge clk or posedge rst) begin
+//   if(rst) begin
+//     cs <= ST_DONE;
+//   end
+//   else begin
+//     cs <= ns;
+//   end
+// end
+
+// endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+module cnn_ctrl(
+clk,
+rst,
+en,
+pset_done,
+conv_done,
+eras_done,
+maxp_done,
+done,
+pset_en,
+conv_en,
+eras_en,
+maxp_en
+);
+
+`include "../src/param.v"
+
+parameter
+ST_PSET = 4,
+ST_CONV = 0,
+ST_ERAS = 1,
+ST_MAXP = 2,
+ST_DONE = 3;
+
+input clk;
+input rst;
+input en;
+input pset_done;
+input conv_done;
+input eras_done;
+input maxp_done;
+
+output done;
+output pset_en;  
+output conv_en;  
+output eras_en;  
+output maxp_en;  
+
+reg done;
+reg pset_en;  
+reg conv_en;  
+reg eras_en;  
+reg maxp_en;  
+
+reg [2:0] ns;
+reg [2:0] cs;
+
+
+
+// `ifdef sim_disp
+
+// integer cycle;
+// integer t_cyc;
+
+// initial begin
+//   cycle = 0;
+//   t_cyc = 0;
+// end
+
+// always@(posedge clk) begin
+//   cycle = cycle + 1;
+//   t_cyc = t_cyc + 1;
+//   case(cs)
+//   ST_PSET: begin
+//     if(!pset_en && pset_done) begin
+//       $display("cnn  pset state cycle: %d", cycle); 
+//       cycle = 0;
+//     end
+//   end
+//   ST_CONV: begin
+//     if(!conv_en && conv_done) begin
+//       $display("cnn  conv state cycle: %d", cycle);
+//       cycle = 0;
+//     end
+//   end
+//   ST_ERAS: begin
+//     if(!eras_en && eras_done) begin
+//       $display("cnn  eras state cycle: %d", cycle); 
+//       cycle = 0;
+//     end
+//   end
+//   ST_MAXP: begin
+//     if(!maxp_en && maxp_done) begin
+//       $display("cnn  maxp state cycle: %d", cycle);       
+//       $display("");  
+//       $display("cnn  done total cycle: %d", t_cyc); 
+//     end
+//   end
+//   ST_DONE: begin
+//     if(en) begin
+//       cycle = 0; 
+//       t_cyc = 0; 
+//       $display("cnn  start !!!");
+//     end
+//   end
+//   endcase
+// end
+
+// `endif
+
+
+// integer cycle_count = 0;
+// always@(posedge clk) cycle_count = cycle_count + 1;
+
+wire [1:0]  mode;
+assign mode = 2'b11;
+always@(*) begin
+  ns = cs;
+  case(cs)
+  ST_PSET: begin
+    if(!pset_en && pset_done) begin
+      if(mode[1]) ns = ST_CONV;
+      else        ns = ST_ERAS;
+    end
+  end
+  ST_CONV: begin
+    if(!conv_en && conv_done)
+      if(mode[0]) ns = ST_ERAS;
+      else        ns = ST_DONE;
+  end
+  ST_ERAS: begin
+    if(!eras_en && eras_done)
+      ns = ST_MAXP;
+  end
+  ST_MAXP: begin
+    if(!maxp_en && maxp_done)
+      ns = ST_DONE;
+  end
+  ST_DONE: begin
+    if(en)
+      ns = ST_PSET;
+  end
+  default: ns = cs;
+  endcase
+end
+
+always@(posedge clk or posedge rst) begin
+  if(rst) begin
+    done    <= 0;
+    pset_en <= 0;
+    conv_en <= 0;
+    eras_en <= 0;
+    maxp_en <= 0;
+  end
+  else begin
+    case(cs)
+    ST_PSET: begin
+      pset_en <= 0;
+      if(!pset_en && pset_done)
+        // conv_en <= 1;
+        if(mode[1]) conv_en <= 1;
+        else        eras_en <= 1;
+    end
+    ST_CONV: begin
+      conv_en <= 0;
+      if(!conv_en && conv_done)
+        // eras_en <= 1;
+        if(mode[0]) eras_en <= 1;
+        else        done    <= 1;
+    end
+    ST_ERAS: begin
+      eras_en <= 0;
+      if(!eras_en && eras_done)
+        maxp_en <= 1;
+    end
+    ST_MAXP: begin
+      maxp_en <= 0;
+      if(!maxp_en && maxp_done)
+        done <= 1;
+    end
+    ST_DONE: begin
+      if(en) begin
+        done    <= 0;
+	      pset_en <= 1;
+      end
+    end
+    default: begin
+      done    <= 0;
+      pset_en <= 0;
+      conv_en <= 0;
+      eras_en <= 0;
+      maxp_en <= 0;
+    end
+    endcase
+  end
+end
+
+always@(posedge clk or posedge rst) begin
+  if(rst) begin
+    cs <= ST_DONE;
+  end
+  else begin
+    cs <= ns;
+  end
+end
+
+endmodule

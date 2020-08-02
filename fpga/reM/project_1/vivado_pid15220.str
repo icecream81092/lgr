@@ -1,0 +1,1322 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 15220
+License: Customer
+
+Current time: 	Mon Aug 19 10:54:24 CST 2019
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Ubuntu
+OS Version: 4.15.0-55-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: localhost:10.0
+Screen size: 3840x1200
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 489 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/opt/Xilinx/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	serval
+User home directory: /home/serval
+User working directory: /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2018.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/serval/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/serval/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/serval/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/vivado.log
+Vivado journal file location: 	/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-15220-serval-ThinkCentre-M910t
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2018.2
+XILINX_SDK: /opt/Xilinx/SDK/2018.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	137 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 872 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 47 MB (+46946kb) [00:00:12]
+// [Engine Memory]: 841 MB (+729868kb) [00:00:12]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data. Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// [GUI Memory]: 85 MB (+37518kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 872 MB. GUI used memory: 36 MB. Current time: 8/19/19 10:54:26 AM CST
+// Opening Vivado Project: project_1.xpr. Version: Vivado v2018.3 
+// bx (ck):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // JButton (A, G)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 897 MB. GUI used memory: 36 MB. Current time: 8/19/19 10:55:01 AM CST
+// [Engine Memory]: 907 MB (+25554kb) [00:00:53]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,041 MB (+93351kb) [00:01:00]
+// Tcl Message: open_project project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/icecr/OneDrive/DOCUME~1/MobaXterm/slash/RemoteFiles/983188_5_3' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serval/ndnquang/cnn_circuit/vivado_pro/IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: project_1; location: /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6238.383 ; gain = 164.719 ; free physical = 816 ; free virtual = 13481 
+// Elapsed time: 14 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,094 MB (+256kb) [00:01:03]
+// y (ck): Project is Read-Only: addNotify
+// a (ck): Critical Messages: addNotify
+// [Engine Memory]: 1,366 MB (+228379kb) [00:01:05]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 48 MB. Current time: 8/19/19 10:55:16 AM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectButton(PAResourceOtoP.Project_SAVE_PROJECT_AS, "Save Project As..."); // a (y)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aE (ck): Save Project As: addNotify
+dismissDialog("Project is Read-Only"); // y (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+// 'o' command handler elapsed time: 8 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aE (ck)
+dismissDialog("Critical Messages"); // a (ck)
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Project As : addNotify
+// Tcl Message: save_project_as project_2 /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_2 -force 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_RENAME
+// bx (ck):  Save Constraints : addNotify
+// [GUI Memory]: 97 MB (+7384kb) [00:01:41]
+dismissDialog("Save Constraints"); // bx (ck)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: ERROR: [BD 41-1296] Cannot read BD file </home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>, check for the correct location of the file. 
+// Tcl Message: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.  
+// a (ck): Critical Messages: addNotify
+dismissDialog("Open Block Design"); // bx (ck)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1296] Cannot read BD file </home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>, check for the correct location of the file.", 0); // b (D, a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: ERROR: [BD 41-1296] Cannot read BD file </home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>, check for the correct location of the file. 
+// Tcl Message: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.  
+// a (ck): Critical Messages: addNotify
+dismissDialog("Open Block Design"); // bx (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+// Elapsed time: 67 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: ERROR: [BD 41-1296] Cannot read BD file </home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>, check for the correct location of the file. 
+// Tcl Message: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_bd_design' failed due to earlier errors.  
+// a (ck): Critical Messages: addNotify
+dismissDialog("Open Block Design"); // bx (ck)
+// Elapsed time: 112 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ck)
+// [GUI Memory]: 103 MB (+1586kb) [00:05:48]
+selectButton((HResource) null, "Properties_settings"); // u (f, ck): TRUE
+selectCheckBox(RDIResource.PropertiesView_AUTOMATICALLY_UPDATE, "Automatically update", false); // g (Q, ResizableWindow): FALSE
+selectCheckBox(RDIResource.PropertiesView_AUTOMATICALLY_UPDATE, "Automatically update", true); // g (Q, ResizableWindow): TRUE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- user.org:user:cnn:1.0 - cnn_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <design_1> from BD file </home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 56 MB. Current time: 8/19/19 11:00:11 AM CST
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6757.672 ; gain = 0.000 ; free physical = 494 ; free virtual = 13380 
+// 'bA' command handler elapsed time: 7 seconds
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// r (ck): Re-customize IP: addNotify
+// Elapsed time: 13 seconds
+setText("Data Size", "32"); // z (aZ, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+dismissDialog("Re-customize IP"); // r (ck)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 525, 384, 1219, 713, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name cnn_v1_0_project -directory /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_2/project_2.tmp/cnn_v1_0_project /home/serval/ndnquang/cnn_circuit/vivado_pro/IP/cnn_zynq/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/serval/ndnquang/cnn_circuit/vivado_pro/IP'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6757.672 ; gain = 0.000 ; free physical = 449 ; free virtual = 13338 
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,592 MB (+164702kb) [00:06:31]
+// Tcl Message: ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design. 
+// Tcl Message: ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors. 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,344 MB. GUI used memory: 70 MB. Current time: 8/19/19 11:00:41 AM CST
+// Tcl Message: current_project project_2 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ao (O, ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v)]", 3, true); // B (D, ck) - Node
+// Tcl Message: current_project cnn_v1_0_project 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v)]", 3); // B (D, ck)
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), ctrl0 : cnn_ctrl (cnn_ctrl.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), ctrl0 : cnn_ctrl (cnn_ctrl.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 110 MB (+2003kb) [00:08:03]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// Elapsed time: 59 seconds
+selectButton((HResource) null, "System_settings"); // u (f, ck): TRUE
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_r_en 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_gpio_0_gpio_io_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_interconnect_aresetn 
+// [GUI Memory]: 116 MB (+192kb) [00:10:02]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_1_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_ps_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_50M_peripheral_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_in_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_w_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_ra 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_b_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_ad 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_out_wd 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_2_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /cnn_0_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_3_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_3_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_4_doutb 
+// Elapsed time: 350 seconds
+selectCodeEditor("cnn_ctrl.v", 327, 155); // ce (w, ck)
+// [GUI Memory]: 122 MB (+87kb) [00:21:08]
+// Elapsed time: 529 seconds
+selectCodeEditor("cnn_ctrl.v", 145, 293); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 149, 329); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 157, 334); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 157, 355); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 157, 379); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 169, 412); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 169, 435); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 173, 424); // ce (w, ck)
+// Elapsed time: 583 seconds
+selectCodeEditor("cnn_ctrl.v", 698, 388); // ce (w, ck)
+// [GUI Memory]: 128 MB (+335kb) [00:32:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 70 MB. Current time: 8/19/19 11:30:41 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 66 MB. Current time: 8/19/19 12:00:41 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 65 MB. Current time: 8/19/19 12:30:41 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 65 MB. Current time: 8/19/19 1:00:41 PM CST
+// Elapsed time: 7247 seconds
+selectCodeEditor("cnn_ctrl.v", 699, 105); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 64 MB. Current time: 8/19/19 1:30:41 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 64 MB. Current time: 8/19/19 1:32:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 65 MB. Current time: 8/19/19 2:02:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,397 MB. GUI used memory: 64 MB. Current time: 8/19/19 2:32:51 PM CST
+// Elapsed time: 5382 seconds
+selectCodeEditor("cnn_ctrl.v", 856, 233); // ce (w, ck)
+selectCodeEditor("cnn_ctrl.v", 607, 366); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), mem_sel0 : cnn_mem_sel (cnn_mem_sel.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), ctrl0 : conv_ctrl (conv_ctrl.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), loop0 : conv_loop (conv_loop.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), addr0 : conv_addr (conv_addr.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), unit0 : conv_unit (conv_unit.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), ctrl0 : conv_ctrl (conv_ctrl.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cnn (cnn_zynq.v), conv0 : conv (conv.v), ctrl0 : conv_ctrl (conv_ctrl.v)]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 65 MB. Current time: 8/19/19 2:57:31 PM CST
+selectCodeEditor("conv_ctrl.v", 451, 297); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 444, 327); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 445, 341); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 447, 287); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 430, 342); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 428, 366); // ce (w, ck)
+selectCodeEditor("conv_ctrl.v", 424, 386); // ce (w, ck)
+// Elapsed time: 270 seconds
+selectCodeEditor("conv_ctrl.v", 718, 267); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 66 MB. Current time: 8/19/19 3:27:31 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 66 MB. Current time: 8/19/19 3:57:31 PM CST
+// Elapsed time: 3669 seconds
+floatView(PAResourceOtoP.PAViews_CODE, "conv_ctrl.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "conv_ctrl.v"); // aw (aE, aG)
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "conv_ctrl.v"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "conv_ctrl.v"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "conv_ctrl.v"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// Elapsed time: 63 seconds
+selectCodeEditor("conv_ctrl.v", 150, 45); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,433 MB. GUI used memory: 69 MB. Current time: 8/19/19 4:27:32 PM CST
+// Elapsed time: 2322 seconds
+selectCodeEditor("conv_ctrl.v", 297, 320); // ce (w, ck)

@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 11 17:10:57 2019
+# Process ID: 15332
+# Current directory: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM
+# Command line: vivado
+# Log file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/vivado.log
+# Journal file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1 -part xc7z020clg400-1
+set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property location {0.5 -63 -197} [get_bd_cells processing_system7_0]
+set_property  ip_repo_paths  /home/serval/daniel_shih/cnn_circuit/vivado_pro/IP [current_project]
+update_ip_catalog
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:we:1.0 we_0
+endgroup
+set_property location {2.5 394 -349} [get_bd_cells we_0]
+delete_bd_objs [get_bd_cells we_0]
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:cnn:1.0 cnn_0
+endgroup
+set_property location {2.5 884 -147} [get_bd_cells cnn_0]
+set_property location {0.5 -44 -189} [get_bd_cells processing_system7_0]
+set_property location {1.5 460 -187} [get_bd_cells cnn_0]
+set_property location {2.5 712 -106} [get_bd_cells cnn_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+delete_bd_objs [get_bd_cells blk_mem_gen_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {1.5 422 -360} [get_bd_cells blk_mem_gen_0]
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+set_property location {3 639 -385} [get_bd_cells blk_mem_gen_0]
+set_property location {1.5 399 -356} [get_bd_cells blk_mem_gen_0]
+set_property location {1 45 -405} [get_bd_cells processing_system7_0]
+set_property location {1 -13 -90} [get_bd_cells cnn_0]
+set_property location {2.5 725 -362} [get_bd_cells blk_mem_gen_0]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_0}]
+set_property location {3 676 -242} [get_bd_cells blk_mem_gen_1]
+set_property location {2 720 -443} [get_bd_cells blk_mem_gen_0]
+set_property location {2 723 -327} [get_bd_cells blk_mem_gen_1]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_1}]
+set_property location {3 696 -201} [get_bd_cells blk_mem_gen_2]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_1}]
+set_property location {3 718 -88} [get_bd_cells blk_mem_gen_3]
+copy_bd_objs /  [get_bd_cells {blk_mem_gen_1}]
+set_property location {3 665 38} [get_bd_cells blk_mem_gen_4]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_cdma:4.1 axi_cdma_0
+endgroup
+set_property location {2 300 -598} [get_bd_cells axi_cdma_0]
+set_property -dict [list CONFIG.C_INCLUDE_SG {0}] [get_bd_cells axi_cdma_0]
+set_property location {2.5 1150 -143} [get_bd_cells cnn_0]
+set_property location {1 37 -175} [get_bd_cells processing_system7_0]
+set_property location {1 227 -411} [get_bd_cells axi_cdma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+endgroup
+set_property location {2.5 452 -517} [get_bd_cells axi_bram_ctrl_0]
+save_bd_design

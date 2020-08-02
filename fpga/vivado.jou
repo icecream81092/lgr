@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jul  5 15:51:05 2019
+# Process ID: 11554
+# Current directory: /home/serval/ndnquang/cnn_circuit/vivado_pro
+# Command line: vivado project_1.xpr
+# Log file: /home/serval/ndnquang/cnn_circuit/vivado_pro/vivado.log
+# Journal file: /home/serval/ndnquang/cnn_circuit/vivado_pro/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name cnn_v1_0_project -directory /home/serval/ndnquang/cnn_circuit/vivado_pro/reM/project_1/project_1.tmp/cnn_v1_0_project /home/serval/ndnquang/cnn_circuit/vivado_pro/IP/cnn_zynq/component.xml
+update_compile_order -fileset sources_1
+current_project project_1
+close_project

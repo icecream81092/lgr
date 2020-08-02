@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May 13 13:32:52 2019
+# Process ID: 30700
+# Current directory: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_3_synth_1
+# Command line: vivado -log design_1_axi_bram_ctrl_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_bram_ctrl_0_3.tcl
+# Log file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_3_synth_1/design_1_axi_bram_ctrl_0_3.vds
+# Journal file: /home/serval/daniel_shih/cnn_circuit/vivado_pro/reM/project_1/project_1.runs/design_1_axi_bram_ctrl_0_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_axi_bram_ctrl_0_3.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_bram_ctrl_0_3, cache-ID = df7342218bfa35c3.
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 13:33:02 2019...

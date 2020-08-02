@@ -1,0 +1,127 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 1920 23 1920 1147 397 166
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ndnquang/cnn_hardware_for_mnist/reconfigurable_CNN/cnn_ip/cnn/sim/cnn.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 19927.899414 42532.567383
+cursor 30100.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 31
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/ndnquang/cnn_hardware_for_mnist/reconfigurable_CNN/cnn_ip/cnn/sim/cnn.fsdb"
+addSignal -h 15 /testfixture/cnn0/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 /testfixture/cnn0/ctrl0/cs[2:0]
+addSignal -h 15 -holdScope cycle[31:0]
+addSignal -h 15 -holdScope pset_en
+addSignal -h 15 -holdScope pset_done
+addSignal -h 15 -holdScope en
+addSignal -h 15 -holdScope done
+addGroup "G2"
+addSignal -h 15 /testfixture/cnn0/pset0/cs
+addSignal -h 15 -holdScope en
+addSignal -h 15 -holdScope en_reg
+addSignal -h 15 -holdScope ps_ra[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope ps_rd[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sf_reg[0:11]
+addGroup "G3"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/cnn0/pset0/R[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope C[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope M[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope N[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope K[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope S[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope IR[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope IC[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope nIR[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope nIC[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope nP[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope MP[7:0]
+addGroup "G4"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/param0/ad[15:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rd[7:0]
+addGroup "G5"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/weight0/ad[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope rd[7:0]
+addGroup "G6"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/input0/ad[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope rd[7:0]
+addGroup "G7"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/bias0/ad[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope rd[7:0]
+addGroup "G8"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/output0/ad[15:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope wd[7:0]
+addSignal -h 15 -holdScope we
+addGroup "G9"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/ndnquang/cnn_hardware_for_mnist/reconfigurable_CNN/cnn_ip/cnn/sim/cnn.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture"
+"/testfixture/cnn0"
+"/testfixture/cnn0/pset0"
+"/testfixture/input0"
+"/testfixture/output0"
+"/testfixture/param0"
+
+SCOPE_LIST_BEGIN
+"/testfixture"
+"/testfixture/cnn0"
+"/testfixture/cnn0/ctrl0"
+"/testfixture/cnn0/conv0"
+"/testfixture/cnn0/eras0"
+"/testfixture/cnn0/pset0"
+"/testfixture/weight0"
+"/testfixture/param0"
+"/testfixture/input0"
+"/testfixture/output0"
+"/testfixture/bias0"
+"/testfixture/cnn0/mem_sel0"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
