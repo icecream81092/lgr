@@ -15,10 +15,11 @@ INCA_libs/
 .ipynb_checkpoints/
 BSSLib.lib++/
 nWaveLog/
+verdiLog/
 *.conf
 *.bak
 *.bat
-
+*.rc
 
 # C object code
 *.o
