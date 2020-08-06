@@ -1,0 +1,883 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 14:56:27 2020
+# Process ID: 49760
+# Current directory: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log cnn.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn.tcl
+# Log file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1/cnn.vds
+# Journal file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cnn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/icecr/appdata/roaming/xilinx/vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.cache/ip 
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_ctrl.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_ctrl.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_loop.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_unit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_loop.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_unit.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_zynq.v:]
+Command: synth_design -top cnn -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 48360 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:1]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:3]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:4]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:6]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 479.535 ; gain = 114.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cnn' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_zynq.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cnn_ctrl' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_ctrl.v:2]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter ST_PSET bound to: 4 - type: integer 
+	Parameter ST_CONV bound to: 0 - type: integer 
+	Parameter ST_ERAS bound to: 1 - type: integer 
+	Parameter ST_MAXP bound to: 2 - type: integer 
+	Parameter ST_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cnn_ctrl' (1#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_ctrl.v:2]
+INFO: [Synth 8-6157] synthesizing module 'cnn_mem_sel' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v:64]
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_mem_sel' (2#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cnn_pset' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v:2]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter DONE bound to: 0 - type: integer 
+	Parameter LOAD bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v:121]
+WARNING: [Synth 8-3848] Net ns in module/entity cnn_pset does not have driver. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'cnn_pset' (3#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v:2]
+INFO: [Synth 8-6157] synthesizing module 'conv' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'conv_ctrl' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_ctrl.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter ST_LOOP bound to: 0 - type: integer 
+	Parameter ST_BIAS bound to: 1 - type: integer 
+	Parameter ST_DONE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'conv_ctrl' (4#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conv_loop' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_loop.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'conv_loop' (5#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_loop.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conv_addr' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'conv_addr' (6#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conv_unit' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_unit.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter HALF_SIZE bound to: 4 - type: integer 
+WARNING: [Synth 8-5788] Register zero_buf_reg in module conv_unit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_unit.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'conv_unit' (7#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv' (8#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv.v:1]
+INFO: [Synth 8-6157] synthesizing module 'eras' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter ST_ERAS bound to: 0 - type: integer 
+	Parameter ST_DONE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:71]
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'eras' (9#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maxp' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'maxp_ctrl' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+	Parameter ST_LOOP bound to: 0 - type: integer 
+	Parameter ST_DONE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v:104]
+INFO: [Synth 8-226] default block is never used [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'maxp_ctrl' (10#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maxp_loop' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_loop.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'maxp_loop' (11#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_loop.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maxp_addr' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+WARNING: [Synth 8-5788] Register in_addr_d1_reg in module maxp_addr is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'maxp_addr' (12#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maxp_unit' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_unit.v:1]
+	Parameter LOOP_BIT bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+	Parameter INTE bound to: 4 - type: integer 
+	Parameter FRAC bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'maxp_unit' (13#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maxp' (14#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'cnn' (15#1) [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_zynq.v:1]
+WARNING: [Synth 8-3917] design cnn has port ps_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port in_ad[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port in_ad[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port out_ad[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port out_ad[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port r_en driven by constant 1
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[7]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[6]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[5]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[4]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[3]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[2]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[1]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 518.762 ; gain = 154.023
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 518.762 ; gain = 154.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 518.762 ; gain = 154.023
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 888.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 888.680 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 889.270 ; gain = 0.590
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 889.270 ; gain = 524.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 889.270 ; gain = 524.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 889.270 ; gain = 524.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'cnn_ctrl'
+INFO: [Synth 8-5544] ROM "conv_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ps_ra" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'conv_ctrl'
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v:79]
+INFO: [Synth 8-4471] merging register 'done_reg' into 'cs_reg' [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:75]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v:73]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_CONV |                            00001 |                              000
+                 ST_DONE |                            00010 |                              011
+                 ST_PSET |                            00100 |                              100
+                 ST_ERAS |                            01000 |                              001
+                 ST_MAXP |                            10000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'cnn_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_DONE |                               00 |                               10
+                 ST_LOOP |                               01 |                               00
+                 ST_BIAS |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'conv_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 889.270 ; gain = 524.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   4 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 5     
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 13    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 28    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 35    
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 20    
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 26    
+	   3 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cnn_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+Module cnn_mem_sel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module cnn_pset 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 12    
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module conv_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 8     
+Module conv_loop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 6     
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 6     
+Module conv_addr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module conv_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+Module eras 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module maxp_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module maxp_loop 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 7     
++---Registers : 
+	                8 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module maxp_addr 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module maxp_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v:78]
+DSP Report: Generating DSP addr0/in_addr2, operation Mode is: A*B.
+DSP Report: operator addr0/in_addr2 is absorbed into DSP addr0/in_addr2.
+DSP Report: operator addr0/in_addr2 is absorbed into DSP addr0/in_addr2.
+DSP Report: Generating DSP addr0/in_addr2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator addr0/in_addr2 is absorbed into DSP addr0/in_addr2.
+DSP Report: operator addr0/in_addr2 is absorbed into DSP addr0/in_addr2.
+DSP Report: Generating DSP addr0/in_addr1, operation Mode is: A*B.
+DSP Report: operator addr0/in_addr1 is absorbed into DSP addr0/in_addr1.
+DSP Report: Generating DSP unit0/add_num1, operation Mode is: A*B.
+DSP Report: operator unit0/add_num1 is absorbed into DSP unit0/add_num1.
+DSP Report: Generating DSP done1, operation Mode is: (C:0xffffffffffff)+A*B.
+DSP Report: operator done1 is absorbed into DSP done1.
+DSP Report: operator done2 is absorbed into DSP done1.
+DSP Report: Generating DSP in_addr2, operation Mode is: A*B.
+DSP Report: operator in_addr2 is absorbed into DSP in_addr2.
+INFO: [Synth 8-5545] ROM "pset0/ps_ra" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design cnn has port ps_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port ps_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port in_ad[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port in_ad[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port w_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_ra[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_ra[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[3] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[2] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port b_we[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port out_ad[1] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port out_ad[0] driven by constant 0
+WARNING: [Synth 8-3917] design cnn has port r_en driven by constant 1
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[7]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[6]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[5]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[4]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[3]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[2]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[1]
+WARNING: [Synth 8-3331] design maxp_addr has unconnected port R[0]
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_in_data_reg[7]' (FDC) to 'conv0/unit0/r_in_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_in_data_reg[8]' (FDC) to 'conv0/unit0/r_in_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_in_data_reg[9]' (FDC) to 'conv0/unit0/r_in_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_in_data_reg[10]' (FDC) to 'conv0/unit0/r_in_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_w_data_reg[7]' (FDC) to 'conv0/unit0/r_w_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_w_data_reg[8]' (FDC) to 'conv0/unit0/r_w_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_w_data_reg[9]' (FDC) to 'conv0/unit0/r_w_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_w_data_reg[10]' (FDC) to 'conv0/unit0/r_w_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_b_data_reg[0]' (FDC) to 'conv0/unit0/r_b_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_b_data_reg[1]' (FDC) to 'conv0/unit0/r_b_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_b_data_reg[2]' (FDC) to 'conv0/unit0/r_b_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/r_b_data_reg[3]' (FDC) to 'conv0/unit0/out_wd_d2_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl0/\FSM_onehot_cs_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl0/conv_en_reg)
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/out_wd_d2_reg[5]' (FDC) to 'conv0/unit0/out_wd_d2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'conv0/unit0/out_wd_d2_reg[6]' (FDC) to 'conv0/unit0/out_wd_d2_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (conv0/\unit0/out_wd_d2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (conv0/\ctrl0/done_reg )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_cs_reg[0]) is unused and will be removed from module cnn_ctrl.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 889.270 ; gain = 524.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|conv        | A*B                    | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv        | (PCIN>>17)+A*B         | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_addr   | A*B                    | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|conv_unit   | A*B                    | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|eras        | (C:0xffffffffffff)+A*B | 16     | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|maxp_addr   | A*B                    | 10     | 8      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 938.602 ; gain = 573.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 940.801 ; gain = 576.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pset0/en_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/ii_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/nico_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/niro_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/loop0/mm_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/rr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/cc_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/nn_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/mm_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/ctrl0/in_we_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv0/loop0/ii_reg[1] )
+INFO: [Synth 8-3886] merging instance 'maxp0/ctrl0/in_we_d1_reg' (FDC) to 'maxp0/ctrl0/in_we_reg'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[0]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[1]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[2]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[3]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[4]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[5]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[6]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[7]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[8]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[9]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[10]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[11]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[12]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[13]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[14]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[15]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[16]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[17]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[18]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[19]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[20]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[21]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[22]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[23]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[24]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[25]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[26]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[27]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pset0/ps_ra_reg[28]' (FDCE) to 'pset0/ps_ra_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pset0/ps_ra_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/ctrl0/in_we_reg )
+INFO: [Synth 8-3886] merging instance 'maxp0/unit0/r_we_in_reg' (FDC) to 'maxp0/ctrl0/in_we_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/ctrl0/in_we_reg )
+INFO: [Synth 8-3886] merging instance 'maxp0/unit0/we_d1_reg' (FDC) to 'maxp0/ctrl0/in_we_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxp0/ctrl0/in_we_reg )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   110|
+|3     |DSP48E1   |     1|
+|4     |DSP48E1_1 |     1|
+|5     |LUT1      |    54|
+|6     |LUT2      |   265|
+|7     |LUT3      |    36|
+|8     |LUT4      |    43|
+|9     |LUT5      |    76|
+|10    |LUT6      |    51|
+|11    |FDCE      |   309|
+|12    |FDPE      |     5|
+|13    |FDRE      |    30|
+|14    |IBUF      |    11|
+|15    |OBUF      |   198|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------+------------+------+
+|      |Instance   |Module      |Cells |
++------+-----------+------------+------+
+|1     |top        |            |  1191|
+|2     |  conv0    |conv        |   284|
+|3     |    addr0  |conv_addr   |   156|
+|4     |    ctrl0  |conv_ctrl   |     6|
+|5     |    loop0  |conv_loop   |   122|
+|6     |  ctrl0    |cnn_ctrl    |    21|
+|7     |  eras0    |eras        |   101|
+|8     |  maxp0    |maxp        |   538|
+|9     |    addr0  |maxp_addr   |   319|
+|10    |    ctrl0  |maxp_ctrl   |     8|
+|11    |    loop0  |maxp_loop   |   107|
+|12    |    unit0  |maxp_unit   |   104|
+|13    |  mem_sel0 |cnn_mem_sel |    35|
+|14    |  pset0    |cnn_pset    |     2|
++------+-----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 980.203 ; gain = 244.957
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 980.203 ; gain = 615.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 98 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:49 . Memory (MB): peak = 980.203 ; gain = 627.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 980.203 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1/cnn.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cnn_utilization_synth.rpt -pb cnn_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 14:57:32 2020...

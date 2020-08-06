@@ -1,0 +1,642 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 14:57:49 2020
+# Process ID: 21196
+# Current directory: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/impl_1
+# Command line: vivado.exe -log cnn.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cnn.tcl -notrace
+# Log file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/impl_1/cnn.vdi
+# Journal file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cnn.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/icecr/appdata/roaming/xilinx/vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.cache/ip 
+Command: link_design -top cnn -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 698.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 10 Warnings, 9 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 698.738 ; gain = 342.246
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 714.648 ; gain = 15.910
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 10abc52d9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1195.559 ; gain = 480.910
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ce692641
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 30 cells and removed 95 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: c1690efb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 22 cells and removed 37 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a04777e1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 6 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a04777e1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              30  |              95  |                                              0  |
+|  Constant propagation         |              22  |              37  |                                              0  |
+|  Sweep                        |               0  |               6  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1292.957 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1292.957 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 1292.957 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.957 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.957 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1e0562e94
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 10 Warnings, 9 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1292.957 ; gain = 594.219
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/impl_1/cnn_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file cnn_drc_opted.rpt -pb cnn_drc_opted.pb -rpx cnn_drc_opted.rpx
+Command: report_drc -file cnn_drc_opted.rpt -pb cnn_drc_opted.pb -rpx cnn_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/impl_1/cnn_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1292.957 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e1cf09b3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 1292.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1292.957 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (198) is greater than number of available sites (125).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 125 sites available on device, but needs 198 sites.
+	Term: b_ra[0]
+	Term: b_ra[1]
+	Term: b_ra[2]
+	Term: b_ra[3]
+	Term: b_ra[4]
+	Term: b_ra[5]
+	Term: b_ra[6]
+	Term: b_ra[7]
+	Term: b_ra[8]
+	Term: b_ra[9]
+	Term: b_ra[10]
+	Term: b_ra[11]
+	Term: b_ra[12]
+	Term: b_ra[13]
+	Term: b_ra[14]
+	Term: b_ra[15]
+	Term: b_ra[16]
+	Term: b_ra[17]
+	Term: b_ra[18]
+	Term: b_ra[19]
+	Term: b_ra[20]
+	Term: b_ra[21]
+	Term: b_ra[22]
+	Term: b_ra[23]
+	Term: b_ra[24]
+	Term: b_ra[25]
+	Term: b_ra[26]
+	Term: b_ra[27]
+	Term: b_ra[28]
+	Term: b_ra[29]
+	Term: b_ra[30]
+	Term: b_ra[31]
+	Term: in_ad[0]
+	Term: in_ad[1]
+	Term: in_ad[2]
+	Term: in_ad[3]
+	Term: in_ad[4]
+	Term: in_ad[5]
+	Term: in_ad[6]
+	Term: in_ad[7]
+	Term: in_ad[8]
+	Term: in_ad[9]
+	Term: in_ad[10]
+	Term: in_ad[11]
+	Term: in_ad[12]
+	Term: in_ad[13]
+	Term: in_ad[14]
+	Term: in_ad[15]
+	Term: in_ad[16]
+	Term: in_ad[17]
+	Term: in_ad[18]
+	Term: in_ad[19]
+	Term: in_ad[20]
+	Term: in_ad[21]
+	Term: in_ad[22]
+	Term: in_ad[23]
+	Term: in_ad[24]
+	Term: in_ad[25]
+	Term: in_ad[26]
+	Term: in_ad[27]
+	Term: in_ad[28]
+	Term: in_ad[29]
+	Term: in_ad[30]
+	Term: in_ad[31]
+	Term: out_ad[0]
+	Term: out_ad[1]
+	Term: out_ad[2]
+	Term: out_ad[3]
+	Term: out_ad[4]
+	Term: out_ad[5]
+	Term: out_ad[6]
+	Term: out_ad[7]
+	Term: out_ad[8]
+	Term: out_ad[9]
+	Term: out_ad[10]
+	Term: out_ad[11]
+	Term: out_ad[12]
+	Term: out_ad[13]
+	Term: out_ad[14]
+	Term: out_ad[15]
+	Term: out_ad[16]
+	Term: out_ad[17]
+	Term: out_ad[18]
+	Term: out_ad[19]
+	Term: out_ad[20]
+	Term: out_ad[21]
+	Term: out_ad[22]
+	Term: out_ad[23]
+	Term: out_ad[24]
+	Term: out_ad[25]
+	Term: out_ad[26]
+	Term: out_ad[27]
+	Term: out_ad[28]
+	Term: out_ad[29]
+	Term: out_ad[30]
+	Term: out_ad[31]
+	Term: ps_ra[0]
+	Term: ps_ra[1]
+	Term: ps_ra[2]
+	Term: ps_ra[3]
+	Term: ps_ra[4]
+	Term: ps_ra[5]
+	Term: ps_ra[6]
+	Term: ps_ra[7]
+	Term: ps_ra[8]
+	Term: ps_ra[9]
+	Term: ps_ra[10]
+	Term: ps_ra[11]
+	Term: ps_ra[12]
+	Term: ps_ra[13]
+	Term: ps_ra[14]
+	Term: ps_ra[15]
+	Term: ps_ra[16]
+	Term: ps_ra[17]
+	Term: ps_ra[18]
+	Term: ps_ra[19]
+	Term: ps_ra[20]
+	Term: ps_ra[21]
+	Term: ps_ra[22]
+	Term: ps_ra[23]
+	Term: ps_ra[24]
+	Term: ps_ra[25]
+	Term: ps_ra[26]
+	Term: ps_ra[27]
+	Term: ps_ra[28]
+	Term: ps_ra[29]
+	Term: ps_ra[30]
+	Term: ps_ra[31]
+	Term: w_ra[0]
+	Term: w_ra[1]
+	Term: w_ra[2]
+	Term: w_ra[3]
+	Term: w_ra[4]
+	Term: w_ra[5]
+	Term: w_ra[6]
+	Term: w_ra[7]
+	Term: w_ra[8]
+	Term: w_ra[9]
+	Term: w_ra[10]
+	Term: w_ra[11]
+	Term: w_ra[12]
+	Term: w_ra[13]
+	Term: w_ra[14]
+	Term: w_ra[15]
+	Term: w_ra[16]
+	Term: w_ra[17]
+	Term: w_ra[18]
+	Term: w_ra[19]
+	Term: w_ra[20]
+	Term: w_ra[21]
+	Term: w_ra[22]
+	Term: w_ra[23]
+	Term: w_ra[24]
+	Term: w_ra[25]
+	Term: w_ra[26]
+	Term: w_ra[27]
+	Term: w_ra[28]
+	Term: w_ra[29]
+	Term: w_ra[30]
+	Term: w_ra[31]
+	Term: in_wd[0]
+	Term: in_wd[1]
+	Term: in_wd[2]
+	Term: in_wd[3]
+	Term: in_wd[4]
+	Term: in_wd[5]
+	Term: in_wd[6]
+	Term: in_wd[7]
+	Term: out_wd[0]
+	Term: out_wd[1]
+	Term: out_wd[2]
+	Term: out_wd[3]
+	Term: out_wd[4]
+	Term: out_wd[5]
+	Term: out_wd[6]
+	Term: out_wd[7]
+	Term: b_we[0]
+	Term: b_we[1]
+	Term: b_we[2]
+	Term: b_we[3]
+	Term: in_we[0]
+	Term: in_we[1]
+	Term: in_we[2]
+	Term: in_we[3]
+	Term: out_we[0]
+	Term: out_we[1]
+	Term: out_we[2]
+	Term: out_we[3]
+	Term: ps_we[0]
+	Term: ps_we[1]
+	Term: ps_we[2]
+	Term: ps_we[3]
+	Term: w_we[0]
+	Term: w_we[1]
+	Term: w_we[2]
+	Term: w_we[3]
+	Term: done
+	Term: r_en
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (208) is greater than number of available sites (125).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 125 sites available on device, but needs 198 sites.
+	Term: b_ra[0]
+	Term: b_ra[1]
+	Term: b_ra[2]
+	Term: b_ra[3]
+	Term: b_ra[4]
+	Term: b_ra[5]
+	Term: b_ra[6]
+	Term: b_ra[7]
+	Term: b_ra[8]
+	Term: b_ra[9]
+	Term: b_ra[10]
+	Term: b_ra[11]
+	Term: b_ra[12]
+	Term: b_ra[13]
+	Term: b_ra[14]
+	Term: b_ra[15]
+	Term: b_ra[16]
+	Term: b_ra[17]
+	Term: b_ra[18]
+	Term: b_ra[19]
+	Term: b_ra[20]
+	Term: b_ra[21]
+	Term: b_ra[22]
+	Term: b_ra[23]
+	Term: b_ra[24]
+	Term: b_ra[25]
+	Term: b_ra[26]
+	Term: b_ra[27]
+	Term: b_ra[28]
+	Term: b_ra[29]
+	Term: b_ra[30]
+	Term: b_ra[31]
+	Term: in_ad[0]
+	Term: in_ad[1]
+	Term: in_ad[2]
+	Term: in_ad[3]
+	Term: in_ad[4]
+	Term: in_ad[5]
+	Term: in_ad[6]
+	Term: in_ad[7]
+	Term: in_ad[8]
+	Term: in_ad[9]
+	Term: in_ad[10]
+	Term: in_ad[11]
+	Term: in_ad[12]
+	Term: in_ad[13]
+	Term: in_ad[14]
+	Term: in_ad[15]
+	Term: in_ad[16]
+	Term: in_ad[17]
+	Term: in_ad[18]
+	Term: in_ad[19]
+	Term: in_ad[20]
+	Term: in_ad[21]
+	Term: in_ad[22]
+	Term: in_ad[23]
+	Term: in_ad[24]
+	Term: in_ad[25]
+	Term: in_ad[26]
+	Term: in_ad[27]
+	Term: in_ad[28]
+	Term: in_ad[29]
+	Term: in_ad[30]
+	Term: in_ad[31]
+	Term: out_ad[0]
+	Term: out_ad[1]
+	Term: out_ad[2]
+	Term: out_ad[3]
+	Term: out_ad[4]
+	Term: out_ad[5]
+	Term: out_ad[6]
+	Term: out_ad[7]
+	Term: out_ad[8]
+	Term: out_ad[9]
+	Term: out_ad[10]
+	Term: out_ad[11]
+	Term: out_ad[12]
+	Term: out_ad[13]
+	Term: out_ad[14]
+	Term: out_ad[15]
+	Term: out_ad[16]
+	Term: out_ad[17]
+	Term: out_ad[18]
+	Term: out_ad[19]
+	Term: out_ad[20]
+	Term: out_ad[21]
+	Term: out_ad[22]
+	Term: out_ad[23]
+	Term: out_ad[24]
+	Term: out_ad[25]
+	Term: out_ad[26]
+	Term: out_ad[27]
+	Term: out_ad[28]
+	Term: out_ad[29]
+	Term: out_ad[30]
+	Term: out_ad[31]
+	Term: ps_ra[0]
+	Term: ps_ra[1]
+	Term: ps_ra[2]
+	Term: ps_ra[3]
+	Term: ps_ra[4]
+	Term: ps_ra[5]
+	Term: ps_ra[6]
+	Term: ps_ra[7]
+	Term: ps_ra[8]
+	Term: ps_ra[9]
+	Term: ps_ra[10]
+	Term: ps_ra[11]
+	Term: ps_ra[12]
+	Term: ps_ra[13]
+	Term: ps_ra[14]
+	Term: ps_ra[15]
+	Term: ps_ra[16]
+	Term: ps_ra[17]
+	Term: ps_ra[18]
+	Term: ps_ra[19]
+	Term: ps_ra[20]
+	Term: ps_ra[21]
+	Term: ps_ra[22]
+	Term: ps_ra[23]
+	Term: ps_ra[24]
+	Term: ps_ra[25]
+	Term: ps_ra[26]
+	Term: ps_ra[27]
+	Term: ps_ra[28]
+	Term: ps_ra[29]
+	Term: ps_ra[30]
+	Term: ps_ra[31]
+	Term: w_ra[0]
+	Term: w_ra[1]
+	Term: w_ra[2]
+	Term: w_ra[3]
+	Term: w_ra[4]
+	Term: w_ra[5]
+	Term: w_ra[6]
+	Term: w_ra[7]
+	Term: w_ra[8]
+	Term: w_ra[9]
+	Term: w_ra[10]
+	Term: w_ra[11]
+	Term: w_ra[12]
+	Term: w_ra[13]
+	Term: w_ra[14]
+	Term: w_ra[15]
+	Term: w_ra[16]
+	Term: w_ra[17]
+	Term: w_ra[18]
+	Term: w_ra[19]
+	Term: w_ra[20]
+	Term: w_ra[21]
+	Term: w_ra[22]
+	Term: w_ra[23]
+	Term: w_ra[24]
+	Term: w_ra[25]
+	Term: w_ra[26]
+	Term: w_ra[27]
+	Term: w_ra[28]
+	Term: w_ra[29]
+	Term: w_ra[30]
+	Term: w_ra[31]
+	Term: in_wd[0]
+	Term: in_wd[1]
+	Term: in_wd[2]
+	Term: in_wd[3]
+	Term: in_wd[4]
+	Term: in_wd[5]
+	Term: in_wd[6]
+	Term: in_wd[7]
+	Term: out_wd[0]
+	Term: out_wd[1]
+	Term: out_wd[2]
+	Term: out_wd[3]
+	Term: out_wd[4]
+	Term: out_wd[5]
+	Term: out_wd[6]
+	Term: out_wd[7]
+	Term: b_we[0]
+	Term: b_we[1]
+	Term: b_we[2]
+	Term: b_we[3]
+	Term: in_we[0]
+	Term: in_we[1]
+	Term: in_we[2]
+	Term: in_we[3]
+	Term: out_we[0]
+	Term: out_we[1]
+	Term: out_we[2]
+	Term: out_we[3]
+	Term: ps_we[0]
+	Term: ps_we[1]
+	Term: ps_we[2]
+	Term: ps_we[3]
+	Term: w_we[0]
+	Term: w_we[1]
+	Term: w_we[2]
+	Term: w_we[3]
+	Term: done
+	Term: r_en
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |    25 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   125 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b876e0b9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1295.973 ; gain = 3.016
+Phase 1 Placer Initialization | Checksum: b876e0b9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1295.973 ; gain = 3.016
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: b876e0b9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1295.973 ; gain = 3.016
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 10 Warnings, 9 Critical Warnings and 5 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 14:58:50 2020...

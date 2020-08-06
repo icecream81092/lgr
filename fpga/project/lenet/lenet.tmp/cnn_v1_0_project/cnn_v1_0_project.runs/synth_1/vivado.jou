@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 14:56:27 2020
+# Process ID: 49760
+# Current directory: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1
+# Command line: vivado.exe -log cnn.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn.tcl
+# Log file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1/cnn.vds
+# Journal file: c:/Users/icecr/AppData/Roaming/Xilinx/Vivado/lenet/lenet.tmp/cnn_v1_0_project/cnn_v1_0_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cnn.tcl -notrace

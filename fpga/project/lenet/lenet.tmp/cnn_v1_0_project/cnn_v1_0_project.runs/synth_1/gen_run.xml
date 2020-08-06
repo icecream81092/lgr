@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1596178584">
+  <File Type="PA-TCL" Name="cnn.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cnn_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="cnn_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cnn.vds"/>
+  <File Type="RDS-UTIL" Name="cnn_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cnn_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cnn.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cnn_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cnn_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/param.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_ctrl.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_mem_sel.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_pset.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_addr.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_ctrl.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_loop.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/conv_unit.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/eras.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_addr.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_ctrl.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_loop.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/maxp_unit.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_zynq.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cnn"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/sources_1/imports/src_zynq/cnn_zynq.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../../../../../Users/icecr/AppData/Roaming/Xilinx/Vivado/layer-group-ip/layer-group-ip.srcs/constrs_1/imports/hw2/pynq-z2_v1.0.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
